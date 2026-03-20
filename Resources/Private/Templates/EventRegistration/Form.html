@@ -1,0 +1,56 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <div class="tx-project-registration-form">
+        <h2>Anmeldung: {event.title}</h2>
+
+        <dl class="event-summary">
+            <dt>Datum</dt>
+            <dd><f:format.date date="{event.eventDate}" format="d.m.Y H:i" /></dd>
+            <f:if condition="{event.location}">
+                <dt>Ort</dt>
+                <dd>{event.location}</dd>
+            </f:if>
+            <f:if condition="{event.participantLimit}">
+                <dt>Verfügbare Plätze</dt>
+                <dd>
+                    <f:if condition="{event.hasAvailableSlots}">
+                        <f:then>{event.participantLimit - event.confirmedRegistrationsCount} von {event.participantLimit}</f:then>
+                        <f:else>Warteliste</f:else>
+                    </f:if>
+                </dd>
+            </f:if>
+        </dl>
+
+        <f:if condition="{event.isRegistrationOpen}">
+            <f:then>
+                <f:form action="register" controller="EventRegistration" method="post">
+                    <f:form.hidden name="event" value="{event.uid}" />
+
+                    <div class="form-group">
+                        <label for="notes">Anmerkungen (optional)</label>
+                        <f:form.textarea name="notes" id="notes" rows="4" class="form-control" />
+                    </div>
+
+                    <f:if condition="{event.hasAvailableSlots}">
+                        <f:then>
+                            <button type="submit" class="btn btn-primary">Verbindlich anmelden</button>
+                        </f:then>
+                        <f:else>
+                            <button type="submit" class="btn btn-secondary">Auf Warteliste eintragen</button>
+                        </f:else>
+                    </f:if>
+                </f:form>
+            </f:then>
+            <f:else>
+                <p class="alert alert-warning">Die Anmeldefrist für diesen Termin ist abgelaufen.</p>
+            </f:else>
+        </f:if>
+
+        <f:link.action action="show" controller="Event" arguments="{event: event}">← Zurück zum Termin</f:link.action>
+    </div>
+</f:section>
+</html>

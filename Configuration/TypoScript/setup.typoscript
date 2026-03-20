@@ -1,0 +1,29 @@
+plugin.tx_project {
+    view {
+        templateRootPaths {
+            0 = EXT:project/Resources/Private/Templates/
+        }
+        partialRootPaths {
+            0 = EXT:project/Resources/Private/Partials/
+        }
+        layoutRootPaths {
+            0 = EXT:project/Resources/Private/Layouts/
+        }
+    }
+
+    persistence {
+        storagePid = {$plugin.tx_project.persistence.storagePid}
+    }
+
+    settings {
+        project {
+            listPid =
+            detailPid =
+        }
+        event {
+            listPid =
+            detailPid =
+            registrationPid =
+        }
+    }
+}

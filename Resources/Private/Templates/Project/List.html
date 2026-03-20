@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <div class="tx-project-project-list">
+        <h2>Projekte</h2>
+        <f:if condition="{projects}">
+            <f:then>
+                <ul class="project-list">
+                    <f:for each="{projects}" as="project">
+                        <li class="project-item project-item--{project.status}">
+                            <h3>
+                                <f:link.action action="show" arguments="{project: project}">
+                                    {project.title}
+                                </f:link.action>
+                            </h3>
+                            <span class="project-status">{project.status}</span>
+                            <f:if condition="{project.description}">
+                                <p>{project.description -> f:format.crop(maxCharacters: 200, append: '...')}</p>
+                            </f:if>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:then>
+            <f:else>
+                <p>Keine Projekte vorhanden.</p>
+            </f:else>
+        </f:if>
+    </div>
+</f:section>
+</html>

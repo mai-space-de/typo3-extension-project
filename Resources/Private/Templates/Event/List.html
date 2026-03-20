@@ -1,0 +1,50 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <div class="tx-project-event-list">
+        <h2>Termine</h2>
+        <f:if condition="{events}">
+            <f:then>
+                <ul class="event-list">
+                    <f:for each="{events}" as="event">
+                        <li class="event-item">
+                            <article>
+                                <h3>
+                                    <f:link.action action="show" arguments="{event: event}" controller="Event">
+                                        {event.title}
+                                    </f:link.action>
+                                </h3>
+                                <time datetime="{event.eventDate -> f:format.date(format: 'Y-m-d\TH:i')}">
+                                    <f:format.date date="{event.eventDate}" format="d.m.Y H:i" />
+                                </time>
+                                <f:if condition="{event.location}">
+                                    <address>{event.location}</address>
+                                </f:if>
+                                <f:if condition="{event.project}">
+                                    <p class="event-project">Projekt: {event.project.title}</p>
+                                </f:if>
+                                <f:if condition="{event.registrationEnabled}">
+                                    <f:if condition="{event.hasAvailableSlots}">
+                                        <f:then>
+                                            <span class="event-registration-available">Anmeldung möglich</span>
+                                        </f:then>
+                                        <f:else>
+                                            <span class="event-registration-full">Ausgebucht (Warteliste möglich)</span>
+                                        </f:else>
+                                    </f:if>
+                                </f:if>
+                            </article>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:then>
+            <f:else>
+                <p>Keine Termine vorhanden.</p>
+            </f:else>
+        </f:if>
+    </div>
+</f:section>
+</html>

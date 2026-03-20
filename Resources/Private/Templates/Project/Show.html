@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <div class="tx-project-project-detail">
+        <f:if condition="{project}">
+            <article class="project-detail">
+                <header class="project-header">
+                    <h1>{project.title}</h1>
+                    <span class="project-status project-status--{project.status}">{project.status}</span>
+                </header>
+
+                <f:if condition="{project.description}">
+                    <div class="project-description">
+                        <f:format.html>{project.description}</f:format.html>
+                    </div>
+                </f:if>
+
+                <f:if condition="{project.responsibleMembers}">
+                    <section class="project-members">
+                        <h3>Verantwortliche</h3>
+                        <ul>
+                            <f:for each="{project.responsibleMembers}" as="member">
+                                <li>{member.firstName} {member.lastName}</li>
+                            </f:for>
+                        </ul>
+                    </section>
+                </f:if>
+
+                <f:if condition="{project.categories}">
+                    <section class="project-categories">
+                        <h3>Kategorien</h3>
+                        <ul>
+                            <f:for each="{project.categories}" as="category">
+                                <li>{category.title}</li>
+                            </f:for>
+                        </ul>
+                    </section>
+                </f:if>
+            </article>
+        </f:if>
+
+        <f:link.action action="list">← Zurück zur Projektliste</f:link.action>
+    </div>
+</f:section>
+</html>
