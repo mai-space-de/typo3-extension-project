@@ -1,4 +1,4 @@
-CREATE TABLE tx_project_domain_model_project (
+CREATE TABLE tx_maiproject_domain_model_project (
     uid int(11) NOT NULL auto_increment,
     pid int(11) DEFAULT '0' NOT NULL,
     tstamp int(11) DEFAULT '0' NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE tx_project_domain_model_project (
     KEY parent (pid)
 );
 
-CREATE TABLE tx_project_domain_model_event (
+CREATE TABLE tx_maiproject_domain_model_event (
     uid int(11) NOT NULL auto_increment,
     pid int(11) DEFAULT '0' NOT NULL,
     tstamp int(11) DEFAULT '0' NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE tx_project_domain_model_event (
     KEY parent (pid)
 );
 
-CREATE TABLE tx_project_domain_model_eventregistration (
+CREATE TABLE tx_maiproject_domain_model_eventregistration (
     uid int(11) NOT NULL auto_increment,
     pid int(11) DEFAULT '0' NOT NULL,
     tstamp int(11) DEFAULT '0' NOT NULL,

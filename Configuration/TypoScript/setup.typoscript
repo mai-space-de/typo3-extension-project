@@ -1,18 +1,18 @@
-plugin.tx_project {
+plugin.tx_maiproject {
     view {
         templateRootPaths {
-            0 = EXT:project/Resources/Private/Templates/
+            0 = EXT:mai_project/Resources/Private/Templates/
         }
         partialRootPaths {
-            0 = EXT:project/Resources/Private/Partials/
+            0 = EXT:mai_project/Resources/Private/Partials/
         }
         layoutRootPaths {
-            0 = EXT:project/Resources/Private/Layouts/
+            0 = EXT:mai_project/Resources/Private/Layouts/
         }
     }
 
     persistence {
-        storagePid = {$plugin.tx_project.persistence.storagePid}
+        storagePid = {$plugin.tx_maiproject.persistence.storagePid}
     }
 
     settings {

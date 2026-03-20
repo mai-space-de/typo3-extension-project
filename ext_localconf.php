@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-use Maispace\Project\Controller\EventController;
-use Maispace\Project\Controller\EventRegistrationController;
-use Maispace\Project\Controller\ProjectController;
+use Maispace\MaiProject\Controller\EventController;
+use Maispace\MaiProject\Controller\EventRegistrationController;
+use Maispace\MaiProject\Controller\ProjectController;
 
 defined('TYPO3') or die();
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'Project',
+    'MaiProject',
     'ProjectList',
     [ProjectController::class => 'list,show'],
     [],
@@ -17,7 +17,7 @@ defined('TYPO3') or die();
 );
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'Project',
+    'MaiProject',
     'EventList',
     [EventController::class => 'list,show'],
     [],
@@ -25,7 +25,7 @@ defined('TYPO3') or die();
 );
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'Project',
+    'MaiProject',
     'EventRegistration',
     [EventRegistrationController::class => 'form,register,cancel,participantList'],
     [EventRegistrationController::class => 'form,register,cancel'],

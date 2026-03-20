@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project',
+        'title' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -13,7 +13,7 @@ return [
             'disabled' => 'hidden',
         ],
         'searchFields' => 'title,description',
-        'iconfile' => 'EXT:project/Resources/Public/Icons/tx_project_domain_model_project.svg',
+        'iconfile' => 'EXT:mai_project/Resources/Public/Icons/tx_project_domain_model_project.svg',
     ],
     'types' => [
         '1' => [
@@ -32,7 +32,7 @@ return [
         ],
         'title' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.title',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.title',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -43,7 +43,7 @@ return [
         ],
         'description' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.description',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.description',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -52,34 +52,34 @@ return [
         ],
         'status' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status.active', 'value' => 'active'],
-                    ['label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status.planned', 'value' => 'planned'],
-                    ['label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status.completed', 'value' => 'completed'],
-                    ['label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status.archived', 'value' => 'archived'],
+                    ['label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status.active', 'value' => 'active'],
+                    ['label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status.planned', 'value' => 'planned'],
+                    ['label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status.completed', 'value' => 'completed'],
+                    ['label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.status.archived', 'value' => 'archived'],
                 ],
                 'default' => 'active',
             ],
         ],
         'responsible_members' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.responsible_members',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.responsible_members',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'fe_users',
-                'MM' => 'tx_project_project_feuser_mm',
+                'MM' => 'tx_maiproject_project_feuser_mm',
                 'size' => 10,
                 'autoSizeMax' => 30,
                 'multiple' => 0,
             ],
         ],
         'categories' => [
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.categories',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_project.categories',
             'config' => [
                 'type' => 'category',
             ],

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration',
+        'title' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration',
         'label' => 'fe_user',
         'label_alt' => 'event',
         'label_alt_force' => true,
@@ -14,7 +14,7 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
-        'iconfile' => 'EXT:project/Resources/Public/Icons/tx_project_domain_model_eventregistration.svg',
+        'iconfile' => 'EXT:mai_project/Resources/Public/Icons/tx_maiproject_domain_model_eventregistration.svg',
     ],
     'types' => [
         '1' => [
@@ -33,7 +33,7 @@ return [
         ],
         'fe_user' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration.fe_user',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration.fe_user',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -45,32 +45,32 @@ return [
         ],
         'event' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration.event',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration.event',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_project_domain_model_event',
+                'foreign_table' => 'tx_maiproject_domain_model_event',
                 'items' => [['label' => '', 'value' => 0]],
                 'size' => 1,
             ],
         ],
         'status' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration.status',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration.status',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration.status.registered', 'value' => 'registered'],
-                    ['label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration.status.waitlisted', 'value' => 'waitlisted'],
-                    ['label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration.status.cancelled', 'value' => 'cancelled'],
+                    ['label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration.status.registered', 'value' => 'registered'],
+                    ['label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration.status.waitlisted', 'value' => 'waitlisted'],
+                    ['label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration.status.cancelled', 'value' => 'cancelled'],
                 ],
                 'default' => 'registered',
             ],
         ],
         'reminder_sent' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration.reminder_sent',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration.reminder_sent',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
@@ -79,7 +79,7 @@ return [
         ],
         'notes' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_eventregistration.notes',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_eventregistration.notes',
             'config' => [
                 'type' => 'text',
                 'rows' => 5,

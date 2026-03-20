@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event',
+        'title' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -13,11 +13,11 @@ return [
             'disabled' => 'hidden',
         ],
         'searchFields' => 'title,description,location',
-        'iconfile' => 'EXT:project/Resources/Public/Icons/tx_project_domain_model_event.svg',
+        'iconfile' => 'EXT:mai_project/Resources/Public/Icons/tx_maiproject_domain_model_event.svg',
     ],
     'types' => [
         '1' => [
-            'showitem' => 'title,event_date,event_end_date,location,description,project,--div--;LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.registration_tab,participant_limit,registration_enabled,registration_deadline,registrations,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,hidden',
+            'showitem' => 'title,event_date,event_end_date,location,description,project,--div--;LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.registration_tab,participant_limit,registration_enabled,registration_deadline,registrations,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,hidden',
         ],
     ],
     'columns' => [
@@ -32,7 +32,7 @@ return [
         ],
         'title' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.title',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.title',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -43,7 +43,7 @@ return [
         ],
         'event_date' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.event_date',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.event_date',
             'config' => [
                 'type' => 'datetime',
                 'required' => true,
@@ -51,14 +51,14 @@ return [
         ],
         'event_end_date' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.event_end_date',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.event_end_date',
             'config' => [
                 'type' => 'datetime',
             ],
         ],
         'location' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.location',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.location',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -68,7 +68,7 @@ return [
         ],
         'description' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.description',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.description',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -77,18 +77,18 @@ return [
         ],
         'project' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.project',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.project',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_project_domain_model_project',
+                'foreign_table' => 'tx_maiproject_domain_model_project',
                 'items' => [['label' => '', 'value' => 0]],
                 'size' => 1,
             ],
         ],
         'participant_limit' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.participant_limit',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.participant_limit',
             'config' => [
                 'type' => 'number',
                 'size' => 4,
@@ -97,7 +97,7 @@ return [
         ],
         'registration_enabled' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.registration_enabled',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.registration_enabled',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
@@ -106,17 +106,17 @@ return [
         ],
         'registration_deadline' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.registration_deadline',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.registration_deadline',
             'config' => [
                 'type' => 'datetime',
             ],
         ],
         'registrations' => [
             'exclude' => false,
-            'label' => 'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:tx_project_domain_model_event.registrations',
+            'label' => 'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:tx_maiproject_domain_model_event.registrations',
             'config' => [
                 'type' => 'inline',
-                'foreign_table' => 'tx_project_domain_model_eventregistration',
+                'foreign_table' => 'tx_maiproject_domain_model_eventregistration',
                 'foreign_field' => 'event',
                 'maxitems' => 9999,
                 'appearance' => [

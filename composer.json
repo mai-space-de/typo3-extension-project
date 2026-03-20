@@ -1,5 +1,5 @@
 {
-    "name": "maispace/project",
+    "name": "maispace/mai-project",
     "description": "TYPO3 extension for managing projects and events",
     "type": "typo3-cms-extension",
     "license": "GPL-2.0-or-later",
@@ -15,17 +15,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Maispace\\Project\\": "Classes/"
+            "Maispace\\MaiProject\\": "Classes/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Maispace\\Project\\Tests\\": "Tests/"
+            "Maispace\\MaiProject\\Tests\\": "Tests/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "project"
+            "extension-key": "mai_project"
         }
     },
     "config": {

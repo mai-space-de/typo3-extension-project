@@ -5,22 +5,22 @@ declare(strict_types=1);
 defined('TYPO3') or die();
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'Project',
+    'MaiProject',
     'ProjectList',
-    'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:plugin.projectlist.title',
-    'EXT:project/Resources/Public/Icons/Extension.svg'
+    'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:plugin.projectlist.title',
+    'EXT:mai_project/Resources/Public/Icons/Extension.svg'
 );
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'Project',
+    'MaiProject',
     'EventList',
-    'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:plugin.eventlist.title',
-    'EXT:project/Resources/Public/Icons/Extension.svg'
+    'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:plugin.eventlist.title',
+    'EXT:mai_project/Resources/Public/Icons/Extension.svg'
 );
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'Project',
+    'MaiProject',
     'EventRegistration',
-    'LLL:EXT:project/Resources/Private/Language/locallang_db.xlf:plugin.eventregistration.title',
-    'EXT:project/Resources/Public/Icons/Extension.svg'
+    'LLL:EXT:mai_project/Resources/Private/Language/locallang_db.xlf:plugin.eventregistration.title',
+    'EXT:mai_project/Resources/Public/Icons/Extension.svg'
 );
