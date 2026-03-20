@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Domain\Repository;
+namespace Maispace\MaiProject\Domain\Repository;
 
-use Maispace\Project\Domain\Model\Event;
-use Maispace\Project\Domain\Model\EventRegistration;
-use Maispace\Project\Domain\Model\FrontendUser;
+use Maispace\MaiProject\Domain\Model\Event;
+use Maispace\MaiProject\Domain\Model\EventRegistration;
+use Maispace\MaiProject\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /**
@@ -14,7 +14,7 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
  */
 class EventRegistrationRepository extends Repository
 {
-    public function findByEventAndUser(Event $event, FrontendUser $feUser): ?\Maispace\Project\Domain\Model\EventRegistration
+    public function findByEventAndUser(Event $event, FrontendUser $feUser): ?\Maispace\MaiProject\Domain\Model\EventRegistration
     {
         $query = $this->createQuery();
         $query->matching(

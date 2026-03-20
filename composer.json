@@ -1,37 +1,41 @@
 {
-    "name": "maispace/mai-project",
-    "description": "TYPO3 extension for managing projects and events",
-    "type": "typo3-cms-extension",
-    "license": "GPL-2.0-or-later",
-    "require": {
-        "typo3/cms-core": "^12.4",
-        "typo3/cms-extbase": "^12.4",
-        "typo3/cms-fluid": "^12.4",
-        "typo3/cms-frontend": "^12.4"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^10.5",
-        "typo3/testing-framework": "^8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Maispace\\MaiProject\\": "Classes/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Maispace\\MaiProject\\Tests\\": "Tests/"
-        }
-    },
-    "extra": {
-        "typo3/cms": {
-            "extension-key": "mai_project"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "typo3/class-alias-loader": true,
-            "typo3/cms-composer-installers": true
-        }
+  "name": "maispace/mai-project",
+  "description": "TYPO3 extension for managing projects and events",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": "^8.2",
+    "typo3/cms-core": "^13.4",
+    "typo3/cms-extbase": "^13.4",
+    "typo3/cms-fluid": "^13.4",
+    "typo3/cms-frontend": "^13.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5",
+    "typo3/testing-framework": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Maispace\\MaiProject\\": "Classes/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Maispace\\MaiProject\\Tests\\": "Tests/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "mai_project"
+    },
+    "branch-alias": {
+      "dev-main": "13.0.x-dev"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    }
+  }
 }

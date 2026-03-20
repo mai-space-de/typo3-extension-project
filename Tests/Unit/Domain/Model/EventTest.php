@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Tests\Unit\Domain\Model;
+namespace Maispace\MaiProject\Tests\Unit\Domain\Model;
 
-use Maispace\Project\Domain\Model\Event;
-use Maispace\Project\Domain\Model\EventRegistration;
-use Maispace\Project\Domain\Model\Project;
+use Maispace\MaiProject\Domain\Model\Event;
+use Maispace\MaiProject\Domain\Model\EventRegistration;
+use Maispace\MaiProject\Domain\Model\Project;
 use PHPUnit\Framework\TestCase;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 

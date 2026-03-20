@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Tests\Unit\Service;
+namespace Maispace\MaiProject\Tests\Unit\Service;
 
-use Maispace\Project\Domain\Model\Event;
-use Maispace\Project\Domain\Model\EventRegistration;
-use Maispace\Project\Domain\Repository\EventRegistrationRepository;
-use Maispace\Project\Event\EventCancelledEvent;
-use Maispace\Project\Event\EventRegisteredEvent;
-use Maispace\Project\Service\EventRegistrationService;
+use Maispace\MaiProject\Domain\Model\Event;
+use Maispace\MaiProject\Domain\Model\EventRegistration;
+use Maispace\MaiProject\Domain\Repository\EventRegistrationRepository;
+use Maispace\MaiProject\Event\EventCancelledEvent;
+use Maispace\MaiProject\Event\EventRegisteredEvent;
+use Maispace\MaiProject\Service\EventRegistrationService;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\EventDispatcher\EventDispatcherInterface;
-use Maispace\Project\Domain\Model\FrontendUser;
+use Maispace\MaiProject\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\Persistence\PersistenceManagerInterface;
 
 class EventRegistrationServiceTest extends TestCase

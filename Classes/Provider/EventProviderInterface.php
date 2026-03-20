@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Provider;
+namespace Maispace\MaiProject\Provider;
 
-use Maispace\Project\Domain\Model\Event;
+use Maispace\MaiProject\Domain\Model\Event;
 
 /**
  * Interface for providing event data to external consumers like maispace/calendar.

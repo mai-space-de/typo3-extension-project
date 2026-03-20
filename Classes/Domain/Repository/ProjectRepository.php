@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Domain\Repository;
+namespace Maispace\MaiProject\Domain\Repository;
 
-use Maispace\Project\Domain\Model\Project;
+use Maispace\MaiProject\Domain\Model\Project;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 

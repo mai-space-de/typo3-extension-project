@@ -14,101 +14,101 @@
             </trans-unit>
 
             <!-- Project model -->
-            <trans-unit id="tx_project_domain_model_project">
+            <trans-unit id="tx_maiproject_domain_model_project">
                 <source>Project</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.title">
+            <trans-unit id="tx_maiproject_domain_model_project.title">
                 <source>Title</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.description">
+            <trans-unit id="tx_maiproject_domain_model_project.description">
                 <source>Description</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.status">
+            <trans-unit id="tx_maiproject_domain_model_project.status">
                 <source>Status</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.status.active">
+            <trans-unit id="tx_maiproject_domain_model_project.status.active">
                 <source>Active</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.status.planned">
+            <trans-unit id="tx_maiproject_domain_model_project.status.planned">
                 <source>Planned</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.status.completed">
+            <trans-unit id="tx_maiproject_domain_model_project.status.completed">
                 <source>Completed</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.status.archived">
+            <trans-unit id="tx_maiproject_domain_model_project.status.archived">
                 <source>Archived</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.responsible_members">
+            <trans-unit id="tx_maiproject_domain_model_project.responsible_members">
                 <source>Responsible Members</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_project.categories">
+            <trans-unit id="tx_maiproject_domain_model_project.categories">
                 <source>Categories</source>
             </trans-unit>
 
             <!-- Event model -->
-            <trans-unit id="tx_project_domain_model_event">
+            <trans-unit id="tx_maiproject_domain_model_event">
                 <source>Event</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.title">
+            <trans-unit id="tx_maiproject_domain_model_event.title">
                 <source>Title</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.event_date">
+            <trans-unit id="tx_maiproject_domain_model_event.event_date">
                 <source>Event Date</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.event_end_date">
+            <trans-unit id="tx_maiproject_domain_model_event.event_end_date">
                 <source>Event End Date</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.location">
+            <trans-unit id="tx_maiproject_domain_model_event.location">
                 <source>Location</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.description">
+            <trans-unit id="tx_maiproject_domain_model_event.description">
                 <source>Description</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.project">
+            <trans-unit id="tx_maiproject_domain_model_event.project">
                 <source>Project</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.participant_limit">
+            <trans-unit id="tx_maiproject_domain_model_event.participant_limit">
                 <source>Participant Limit</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.registration_enabled">
+            <trans-unit id="tx_maiproject_domain_model_event.registration_enabled">
                 <source>Registration Enabled</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.registration_deadline">
+            <trans-unit id="tx_maiproject_domain_model_event.registration_deadline">
                 <source>Registration Deadline</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.registrations">
+            <trans-unit id="tx_maiproject_domain_model_event.registrations">
                 <source>Registrations</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_event.registration_tab">
+            <trans-unit id="tx_maiproject_domain_model_event.registration_tab">
                 <source>Registration</source>
             </trans-unit>
 
             <!-- EventRegistration model -->
-            <trans-unit id="tx_project_domain_model_eventregistration">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration">
                 <source>Event Registration</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_eventregistration.fe_user">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration.fe_user">
                 <source>Frontend User</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_eventregistration.event">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration.event">
                 <source>Event</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_eventregistration.status">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration.status">
                 <source>Status</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_eventregistration.status.registered">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration.status.registered">
                 <source>Registered</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_eventregistration.status.waitlisted">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration.status.waitlisted">
                 <source>Waitlisted</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_eventregistration.status.cancelled">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration.status.cancelled">
                 <source>Cancelled</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_eventregistration.reminder_sent">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration.reminder_sent">
                 <source>Reminder Sent</source>
             </trans-unit>
-            <trans-unit id="tx_project_domain_model_eventregistration.notes">
+            <trans-unit id="tx_maiproject_domain_model_eventregistration.notes">
                 <source>Notes</source>
             </trans-unit>
         </body>

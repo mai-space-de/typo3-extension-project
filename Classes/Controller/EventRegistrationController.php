@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Controller;
+namespace Maispace\MaiProject\Controller;
 
-use Maispace\Project\Domain\Model\Event;
-use Maispace\Project\Domain\Repository\EventRegistrationRepository;
-use Maispace\Project\Service\EventRegistrationService;
+use Maispace\MaiProject\Domain\Model\Event;
+use Maispace\MaiProject\Domain\Repository\EventRegistrationRepository;
+use Maispace\MaiProject\Service\EventRegistrationService;
 use Psr\Http\Message\ResponseInterface;
-use Maispace\Project\Domain\Repository\FrontendUserRepository;
+use Maispace\MaiProject\Domain\Repository\FrontendUserRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class EventRegistrationController extends ActionController

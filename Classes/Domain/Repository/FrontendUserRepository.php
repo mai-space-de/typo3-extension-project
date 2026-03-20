@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Domain\Repository;
+namespace Maispace\MaiProject\Domain\Repository;
 
-use Maispace\Project\Domain\Model\FrontendUser;
+use Maispace\MaiProject\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /**

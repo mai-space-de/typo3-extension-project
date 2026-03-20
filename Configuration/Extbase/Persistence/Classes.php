@@ -3,16 +3,16 @@
 declare(strict_types=1);
 
 return [
-    \Maispace\Project\Domain\Model\Project::class => [
-        'tableName' => 'tx_project_domain_model_project',
+    \Maispace\MaiProject\Domain\Model\Project::class => [
+        'tableName' => 'tx_maiproject_domain_model_project',
         'properties' => [
             'responsibleMembers' => [
                 'fieldName' => 'responsible_members',
             ],
         ],
     ],
-    \Maispace\Project\Domain\Model\Event::class => [
-        'tableName' => 'tx_project_domain_model_event',
+    \Maispace\MaiProject\Domain\Model\Event::class => [
+        'tableName' => 'tx_maiproject_domain_model_event',
         'properties' => [
             'eventDate' => [
                 'fieldName' => 'event_date',
@@ -31,8 +31,8 @@ return [
             ],
         ],
     ],
-    \Maispace\Project\Domain\Model\EventRegistration::class => [
-        'tableName' => 'tx_project_domain_model_eventregistration',
+    \Maispace\MaiProject\Domain\Model\EventRegistration::class => [
+        'tableName' => 'tx_maiproject_domain_model_eventregistration',
         'properties' => [
             'feUser' => [
                 'fieldName' => 'fe_user',
@@ -42,7 +42,7 @@ return [
             ],
         ],
     ],
-    \Maispace\Project\Domain\Model\FrontendUser::class => [
+    \Maispace\MaiProject\Domain\Model\FrontendUser::class => [
         'tableName' => 'fe_users',
         'properties' => [
             'firstName' => [

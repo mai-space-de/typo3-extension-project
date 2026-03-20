@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Event;
+namespace Maispace\MaiProject\Event;
 
-use Maispace\Project\Domain\Model\EventRegistration;
+use Maispace\MaiProject\Domain\Model\EventRegistration;
 
 /**
  * PSR-14 event dispatched when a user registers for an event.

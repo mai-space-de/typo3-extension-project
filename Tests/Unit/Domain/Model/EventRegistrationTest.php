@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Tests\Unit\Domain\Model;
+namespace Maispace\MaiProject\Tests\Unit\Domain\Model;
 
-use Maispace\Project\Domain\Model\Event;
-use Maispace\Project\Domain\Model\EventRegistration;
+use Maispace\MaiProject\Domain\Model\Event;
+use Maispace\MaiProject\Domain\Model\EventRegistration;
 use PHPUnit\Framework\TestCase;
-use Maispace\Project\Domain\Model\FrontendUser;
+use Maispace\MaiProject\Domain\Model\FrontendUser;
 
 class EventRegistrationTest extends TestCase
 {

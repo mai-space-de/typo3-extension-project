@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Domain\Repository;
+namespace Maispace\MaiProject\Domain\Repository;
 
-use Maispace\Project\Domain\Model\Event;
+use Maispace\MaiProject\Domain\Model\Event;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
@@ -26,7 +26,7 @@ class EventRepository extends Repository
         return $query->execute();
     }
 
-    public function findByProject(\Maispace\Project\Domain\Model\Project $project): \TYPO3\CMS\Extbase\Persistence\QueryResultInterface
+    public function findByProject(\Maispace\MaiProject\Domain\Model\Project $project): \TYPO3\CMS\Extbase\Persistence\QueryResultInterface
     {
         $query = $this->createQuery();
         $query->matching($query->equals('project', $project));

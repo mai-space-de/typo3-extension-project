@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Maispace\Project\Service;
+namespace Maispace\MaiProject\Service;
 
-use Maispace\Project\Domain\Model\Event;
-use Maispace\Project\Domain\Model\EventRegistration;
-use Maispace\Project\Domain\Repository\EventRegistrationRepository;
-use Maispace\Project\Event\EventCancelledEvent;
-use Maispace\Project\Event\EventRegisteredEvent;
+use Maispace\MaiProject\Domain\Model\Event;
+use Maispace\MaiProject\Domain\Model\EventRegistration;
+use Maispace\MaiProject\Domain\Repository\EventRegistrationRepository;
+use Maispace\MaiProject\Event\EventCancelledEvent;
+use Maispace\MaiProject\Event\EventRegisteredEvent;
 use Psr\EventDispatcher\EventDispatcherInterface;
-use Maispace\Project\Domain\Model\FrontendUser;
+use Maispace\MaiProject\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\Persistence\PersistenceManagerInterface;
 
 class EventRegistrationService
