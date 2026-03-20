@@ -6,7 +6,7 @@ namespace Maispace\Project\Domain\Repository;
 
 use Maispace\Project\Domain\Model\Event;
 use Maispace\Project\Domain\Model\EventRegistration;
-use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
+use Maispace\Project\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /**

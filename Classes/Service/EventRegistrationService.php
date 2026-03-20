@@ -10,7 +10,7 @@ use Maispace\Project\Domain\Repository\EventRegistrationRepository;
 use Maispace\Project\Event\EventCancelledEvent;
 use Maispace\Project\Event\EventRegisteredEvent;
 use Psr\EventDispatcher\EventDispatcherInterface;
-use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
+use Maispace\Project\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\Persistence\PersistenceManagerInterface;
 
 class EventRegistrationService

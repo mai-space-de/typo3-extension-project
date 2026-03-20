@@ -42,4 +42,15 @@ return [
             ],
         ],
     ],
+    \Maispace\Project\Domain\Model\FrontendUser::class => [
+        'tableName' => 'fe_users',
+        'properties' => [
+            'firstName' => [
+                'fieldName' => 'first_name',
+            ],
+            'lastName' => [
+                'fieldName' => 'last_name',
+            ],
+        ],
+    ],
 ];

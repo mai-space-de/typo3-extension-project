@@ -13,7 +13,7 @@ use Maispace\Project\Service\EventRegistrationService;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\EventDispatcher\EventDispatcherInterface;
-use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
+use Maispace\Project\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\Persistence\PersistenceManagerInterface;
 
 class EventRegistrationServiceTest extends TestCase

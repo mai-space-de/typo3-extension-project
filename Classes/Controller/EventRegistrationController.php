@@ -8,7 +8,7 @@ use Maispace\Project\Domain\Model\Event;
 use Maispace\Project\Domain\Repository\EventRegistrationRepository;
 use Maispace\Project\Service\EventRegistrationService;
 use Psr\Http\Message\ResponseInterface;
-use TYPO3\CMS\Extbase\Domain\Repository\FrontendUserRepository;
+use Maispace\Project\Domain\Repository\FrontendUserRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class EventRegistrationController extends ActionController

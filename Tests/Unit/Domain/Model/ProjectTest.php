@@ -6,7 +6,7 @@ namespace Maispace\Project\Tests\Unit\Domain\Model;
 
 use Maispace\Project\Domain\Model\Project;
 use PHPUnit\Framework\TestCase;
-use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
+use Maispace\Project\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class ProjectTest extends TestCase

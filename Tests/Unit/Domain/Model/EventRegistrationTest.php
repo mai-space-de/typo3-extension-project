@@ -7,7 +7,7 @@ namespace Maispace\Project\Tests\Unit\Domain\Model;
 use Maispace\Project\Domain\Model\Event;
 use Maispace\Project\Domain\Model\EventRegistration;
 use PHPUnit\Framework\TestCase;
-use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
+use Maispace\Project\Domain\Model\FrontendUser;
 
 class EventRegistrationTest extends TestCase
 {

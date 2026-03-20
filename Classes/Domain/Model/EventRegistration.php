@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Maispace\Project\Domain\Model;
 
-use TYPO3\CMS\Extbase\Domain\Model\FrontendUser;
+use Maispace\Project\Domain\Model\FrontendUser;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 class EventRegistration extends AbstractEntity
