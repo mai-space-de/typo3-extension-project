@@ -1,0 +1,6 @@
+plugin.tx_project {
+    persistence {
+        # cat=plugin.tx_project/persistence; type=string; label=Storage PID
+        storagePid =
+    }
+}

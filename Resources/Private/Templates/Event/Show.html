@@ -1,0 +1,68 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <div class="tx-project-event-detail">
+        <f:if condition="{event}">
+            <article class="event-detail">
+                <header class="event-header">
+                    <h1>{event.title}</h1>
+                </header>
+
+                <dl class="event-meta">
+                    <dt>Datum</dt>
+                    <dd>
+                        <time datetime="{event.eventDate -> f:format.date(format: 'Y-m-d\TH:i')}">
+                            <f:format.date date="{event.eventDate}" format="d.m.Y H:i" />
+                        </time>
+                        <f:if condition="{event.eventEndDate}">
+                            – <f:format.date date="{event.eventEndDate}" format="d.m.Y H:i" />
+                        </f:if>
+                    </dd>
+
+                    <f:if condition="{event.location}">
+                        <dt>Ort</dt>
+                        <dd>{event.location}</dd>
+                    </f:if>
+
+                    <f:if condition="{event.project}">
+                        <dt>Projekt</dt>
+                        <dd>{event.project.title}</dd>
+                    </f:if>
+
+                    <f:if condition="{event.participantLimit}">
+                        <dt>Teilnehmerlimit</dt>
+                        <dd>{event.confirmedRegistrationsCount} / {event.participantLimit}</dd>
+                    </f:if>
+                </dl>
+
+                <f:if condition="{event.description}">
+                    <div class="event-description">
+                        <f:format.html>{event.description}</f:format.html>
+                    </div>
+                </f:if>
+
+                <f:if condition="{event.registrationEnabled}">
+                    <section class="event-registration">
+                        <h3>Anmeldung</h3>
+                        <f:if condition="{event.isRegistrationOpen}">
+                            <f:then>
+                                <f:link.action action="form" controller="EventRegistration" arguments="{event: event}">
+                                    Jetzt anmelden
+                                </f:link.action>
+                            </f:then>
+                            <f:else>
+                                <p>Die Anmeldefrist ist abgelaufen.</p>
+                            </f:else>
+                        </f:if>
+                    </section>
+                </f:if>
+            </article>
+        </f:if>
+
+        <f:link.action action="list" controller="Event">← Zurück zur Terminliste</f:link.action>
+    </div>
+</f:section>
+</html>
